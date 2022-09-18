@@ -33,11 +33,6 @@ doc / javacOptions := {
     opts
 }
 
-javaOptions ++= Seq(
-  "-XX:+IgnoreUnrecognizedVMOptions",
-  "--add-opens=java.base/java.lang=ALL-UNNAMED"
-)
-
 // Configuration for SnappyHadoopCompatibleOutputStream testing
 Test / fork := true
 
